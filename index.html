@@ -12,8 +12,8 @@
         <div class="container">
             <div class="paper-title">
                 <div class="col">
-                    <div class="row"> <h1 class="short-title"> OnSurfacePrior </h1> </div>
-                    <div class="row"> <h3 class="long-title"> Reconstructing Surfaces for Sparse Point Clouds with On-Surface Priors </h3> </div>
+                    <div class="row"> <h1 class="short-title"> PredictableContextPrior </h1> </div>
+                    <div class="row"> <h3 class="long-title"> Surface Reconstruction from Point Clouds by Learning Predictive Context Priors </h3> </div>
                     <div class="row"> <p class="conference-label"> CVPR 2022 </p> </div>
                 </div>
             </div>
@@ -29,6 +29,10 @@
                         <div class="row"> <p class="affiliation">Tsinghua University</p> </div>
                     </div>
                     <div class="col">
+                        <div class="row"> <p class="author-name">Matthias Zwicker</p> </div>
+                        <div class="row"> <p class="affiliation">University of Maryland</p> </div>
+                    </div>
+                    <div class="col">
                         <div class="row"> <p class="author-name"><a href="https://h312h.github.io/">Zhizhong Han</a></p> </div>
                         <div class="row"> <p class="affiliation">Wayne State University</p> </div>
                     </div>
@@ -38,13 +42,13 @@
             <div class="resource-link">
                 <div class="row">
                     <div class="col">
-                        <a href="https://github.com/mabaorui/OnSurfacePrior">
+                        <a href="https://github.com/mabaorui/PredictableContextPrior">
                             <img class="resource-icon" src="./images/code.png" alt="code icon">
                             <p class="resource-text">Code</p>
                         </a>
                     </div>
                     <div class="col">
-                        <a href="https://yushen-liu.github.io/main/pdf/LiuYS_CVPR2022_OnSurfacePriors.pdf">
+                        <a href="https://yushen-liu.github.io/main/pdf/CVPR2022_PredictiveContextPriors.pdf">
                             <img class="resource-icon" src="./images/paper.png" alt="paper icon">
                             <p class="resource-text">Paper</p>
                         </a>
@@ -60,7 +64,7 @@
 
             <div class="intro-images">
                 <div class="row">
-                    <img class="abstract-img1" src="./images/overview.png" alt="abstract image"> 
+                    <img class="abstract-img1" src="./images/overview2.png" alt="abstract image"> 
                 </div>
             </div>
 
@@ -72,7 +76,7 @@
                           <h2 class="title is-3">Video</h2>
                           <div class="video">
                             <video width="100%" height="100%" controls autoplay loop>
-                                <source src="./videos/CVPR2022_OnSurfacePriors.mp4" type="video/mp4"/>
+                                <source src="./videos/PredictableContextPrior.mp4" type="video/mp4"/>
                                 Your browser does not support the video tag.
                             </video>
                         </div>
@@ -118,7 +122,7 @@
                         <model-viewer alt="View reconstruction results in 3D" src="./objects/abc1_np.glb" exposure="0.3" auto-rotate camera-controls></model-viewer>
                     </td>
                     <td>
-                        <model-viewer alt="View reconstruction results in 3D" src="./objects/abc1__ours.glb" exposure="0.3" auto-rotate camera-controls></model-viewer>
+                        <model-viewer alt="View reconstruction results in 3D" src="./objects/abc1_ours.glb" exposure="0.3" auto-rotate camera-controls></model-viewer>
                     </td>
                     </tr>
 
@@ -164,7 +168,7 @@
                     
                     <table class="dataintable">
                     <tr>
-                    <th style="width:100%;">Input rwa point cloud scanned by LiDAR Scanner</th>
+                    <th style="width:100%;">Input rwa point cloud scanned by LiDAR Sensors</th>
                     </tr>
                     
                     <tr>
@@ -184,9 +188,9 @@
                     Citation
                 </p>
                 <p class="citation-text">
-                    @inproceedings{On-SurfacePriors,</br>
-                        &ensp;&ensp;&ensp;&ensp;title={Reconstructing Surfaces for Sparse Point Clouds with On-Surface Priors},</br>
-                        &ensp;&ensp;&ensp;&ensp;author={Baorui Ma and Yu-Shen Liu and Zhizhong Han},</br>
+                    @inproceedings{PredictableContextPrior,</br>
+                        &ensp;&ensp;&ensp;&ensp;title={Surface Reconstruction from Point Clouds by Learning Predictive Context Priors},</br>
+                        &ensp;&ensp;&ensp;&ensp;author={Baorui Ma and Yu-Shen Liu and Matthias Zwicker and Zhizhong Han},</br>
                         &ensp;&ensp;&ensp;&ensp;booktitle={IEEE/CVF Conference on Computer Vision and Pattern Recognition},</br>
                         &ensp;&ensp;&ensp;&ensp;year={2022}</br>
                     }
@@ -197,10 +201,9 @@
                     Related Work
                 </p>
                 <p class="citation-text">
-                    <strong>[1]</strong> Shi-Lin Liu, Hao-Xiang Guo, Hao Pan, PengshuaiWang, Xin Tong, and Yang Liu. Deep implicit moving least-squares functions for 3D reconstruction. Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2021.</br>
-                    <strong>[2]</strong> Lars Mescheder Marc Pollefeys Andreas Geiger Songyou Peng, Michael Niemeyer. Convolutional occupancy networks. In European Conference on Computer Vision (ECCV), 2020.</br>
-                    <strong>[3]</strong> Baorui Ma, Zhizhong Han, Yu-Shen Liu, Matthias Zwicker. Neural-Pull: Learning Signed Distance Functions from Point Clouds by Learning to Pull Space onto Surfaces. International Conference on Machine Learning (ICML), 2021, PMLR 139: 7246-7257.</br>
-                    <strong>[4]</strong> Baorui Ma, Yu-Shen Liu, Matthias Zwicker, Zhizhong Han. Surface Reconstruction from Point Clouds by Learning Predictive Context Priors. Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2022.</br>
+                    <strong>[1]</strong> Philipp Erler, Paul Guerrero, Stefan Ohrhallinger, Niloy J. Mitra, and Michael Wimmer. Points2Surf: Learning implicit surfaces from point clouds. In European Conference on Computer Vision, 2020. 1, 2, 5, 6, 8.</br>
+                    <strong>[2]</strong> Baorui Ma, Zhizhong Han, Yu-Shen Liu, Matthias Zwicker. Neural-Pull: Learning Signed Distance Functions from Point Clouds by Learning to Pull Space onto Surfaces. International Conference on Machine Learning (ICML), 2021, PMLR 139: 7246-7257.</br>
+                    <strong>[3]</strong> Baorui Ma, Yu-Shen Liu, Matthias Zwicker, Zhizhong Han. Surface Reconstruction from Point Clouds by Learning Predictive Context Priors. Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2022.</br>
                 </p>
             </div>
             
