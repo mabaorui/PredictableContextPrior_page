@@ -101,36 +101,36 @@
                     Results:
                 </p>
                 <div>
-                    <h2><strong>Visual comparison with IMLS [1] in unseen classes under ShapeNet.</strong></h2>
+                    <h2><strong>Visual comparison with Point2Surf [1] and Neural-pull [2] under ABC dataset.</strong></h2>
                     
                     <table class="dataintable">
                     <tr>
-                    <th style="width:33%;">Input points without normals</th>
-                    <th style="width:33%;">IMLS</th>
+                    <th style="width:33%;">Point2Surf</th>
+                    <th style="width:33%;">Neural-pull</th>
                     <th style="width:33%;">Ours</th>
                     </tr>
                     
                     <tr>
                     <td>
-                        <model-viewer alt="View reconstruction results in 3D" src="./objects/bathtub1_input.glb" exposure="0.3" auto-rotate camera-controls></model-viewer>
+                        <model-viewer alt="View reconstruction results in 3D" src="./objects/abc1_p2s.glb" exposure="0.3" auto-rotate camera-controls></model-viewer>
                     </td>
                     <td>
-                        <model-viewer alt="View reconstruction results in 3D" src="./objects/bathtub1_IMLS.glb" exposure="0.3" auto-rotate camera-controls></model-viewer>
+                        <model-viewer alt="View reconstruction results in 3D" src="./objects/abc1_np.glb" exposure="0.3" auto-rotate camera-controls></model-viewer>
                     </td>
                     <td>
-                        <model-viewer alt="View reconstruction results in 3D" src="./objects/bathtub1_ours.glb" exposure="0.3" auto-rotate camera-controls></model-viewer>
+                        <model-viewer alt="View reconstruction results in 3D" src="./objects/abc1__ours.glb" exposure="0.3" auto-rotate camera-controls></model-viewer>
                     </td>
                     </tr>
 
                     <tr>
                         <td>
-                            <model-viewer alt="View reconstruction results in 3D" src="./objects/bathtub2_input.glb" exposure="0.3" auto-rotate camera-controls></model-viewer>
+                            <model-viewer alt="View reconstruction results in 3D" src="./objects/abc2_p2s.glb" exposure="0.3" auto-rotate camera-controls></model-viewer>
                         </td>
                         <td>
-                            <model-viewer alt="View reconstruction results in 3D" src="./objects/bathtub2_IMLS.glb" exposure="0.3" auto-rotate camera-controls></model-viewer>
+                            <model-viewer alt="View reconstruction results in 3D" src="./objects/abc2_np.glb" exposure="0.3" auto-rotate camera-controls></model-viewer>
                         </td>
                         <td>
-                            <model-viewer alt="View reconstruction results in 3D" src="./objects/bathtub2_ours.glb" exposure="0.3" auto-rotate camera-controls></model-viewer>
+                            <model-viewer alt="View reconstruction results in 3D" src="./objects/abc2_ours.glb" exposure="0.3" auto-rotate camera-controls></model-viewer>
                         </td>
                     </tr>
 
@@ -138,30 +138,45 @@
                 </div>
 
                 <div>
-                    <h2><strong>Visual comparison with COcc [2] under SceneNet.</strong></h2>
+                    <h2><strong>We reconstruct highly accurate surfaces from 300K points under FAMOUS dataset.</strong></h2>
                     
                     <table class="dataintable">
                     <tr>
-                    <th style="width:33%;">Input points without normals</th>
-                    <th style="width:33%;">COcc</th>
-                    <th style="width:33%;">Ours</th>
+                    <th style="width:50%;">Liberty</th>
+                    <th style="width:50%;">Dragon</th>
                     </tr>
                     
                     <tr>
                     <td>
-                        <model-viewer alt="View reconstruction results in 3D" src="./objects/bathroom_input.glb" exposure="0.3" auto-rotate camera-controls></model-viewer>
+                        <model-viewer alt="View reconstruction results in 3D" src="./objects/Liberty_ours.glb" exposure="0.3" auto-rotate camera-controls></model-viewer>
                     </td>
                     <td>
-                        <model-viewer alt="View reconstruction results in 3D" src="./objects/bathroom_cocc.glb" exposure="0.3" auto-rotate camera-controls></model-viewer>
-                    </td>
-                    <td>
-                        <model-viewer alt="View reconstruction results in 3D" src="./objects/bathroom_ours.glb" exposure="0.3" auto-rotate camera-controls></model-viewer>
+                        <model-viewer alt="View reconstruction results in 3D" src="./objects/Dragon_ours.glb" exposure="0.3" auto-rotate camera-controls></model-viewer>
                     </td>
                     </tr>
 
                     
                     </table>
                 </div>
+
+                <div>
+                    <h2><strong>Surface reconstruction of a real scanned scene with texture.</strong></h2>
+                    
+                    <table class="dataintable">
+                    <tr>
+                    <th style="width:100%;">Input rwa point cloud scanned by LiDAR Scanner</th>
+                    </tr>
+                    
+                    <tr>
+                    <td>
+                        <model-viewer alt="View reconstruction results in 3D" src="./objects/bim406.glb" exposure="0.3" auto-rotate camera-controls></model-viewer>
+                    </td>
+                    </tr>
+
+                    
+                    </table>
+                </div>
+
             </div>
 
             <div class="citation">
